@@ -13,7 +13,6 @@ if len(sys.argv) > 1:
         arrHeader.append(unpack("<I", file.read(4))[0])  # headerLength
         arrHeader.append(unpack("<I", file.read(4))[0])  # version
         arrHeader.append(unpack("<I", file.read(4))[0])  # soundbankid
-        print(arrHeader[2])
 
         currentPos = 8
         while (currentPos < arrHeader[1]):
@@ -69,7 +68,7 @@ if len(sys.argv) > 1:
 
         file.close()
     else:
-        print("\nError while opening file. This file might not exist.\nUsage instructions: python WEMExtract.py [path + name of file]\n")
+        print("\nError while opening file. This file might not exist.\nUsage instructions: python BnkExtract.py [path + name of file]\n")
 else:
-    print("Usage instructions: python WEMExtract.py [path + name of file]\n")
+    print("Usage instructions: python BnkExtract.py [path + name of file]\n")
 

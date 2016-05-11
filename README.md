@@ -4,9 +4,15 @@ WEM extractor for AudioKinetic Wwise soundbanks. Works with file version 113 and
 
 ## Usage
 
-Usage is:
+Usage when using the Python version is:
 
 `python BnkExtract.py [input]`
+
+Usage when using the Windows build is:
+
+`BnkExtract.exe [input]`
+
+
 
 ## Listening to WEM-files
 
